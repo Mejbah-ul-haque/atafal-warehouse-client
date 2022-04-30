@@ -24,22 +24,22 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav " />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link className='nav-style' as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link className='nav-style' href="home#services">Journalism</Nav.Link>
-                            <Nav.Link className='nav-style' as={Link} to="/blogs">Blogs</Nav.Link>
+                            <Nav.Link className='nav-style nav-item' as={Link} to="/">HOME</Nav.Link>
+                            <Nav.Link className='nav-style nav-item' href="home#Items">ITEMS</Nav.Link>
+                            <Nav.Link className='nav-style nav-item' as={Link} to="/blog">BLOG</Nav.Link>
 
-                            <NavDropdown className='nav-style text-light' title="News" id="collasible-nav-dropdown">
-                                <NavDropdown.Item as={Link} to="/breaking/3.1">Breaking</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/world/3.2">World</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/exclusive/3.3">Exclusive</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/feature/3.4">Feature</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to="/travel/3.5">Travel</NavDropdown.Item>
+                            <NavDropdown className='nav-style text-light nav-item' title="CATEGORY" id="collasible-nav-dropdown">
+                                <NavDropdown.Item className='nav-item' as={Link} to="/laptop/3.1">Laptop</NavDropdown.Item>
+                                <NavDropdown.Item className='nav-item' as={Link} to="/mobile/3.2">Mobile</NavDropdown.Item>
+                                <NavDropdown.Item className='nav-item' as={Link} to="/watch/3.3">SMARTWATCH</NavDropdown.Item>
+                                <NavDropdown.Item className='nav-item' as={Link} to="/iron/3.4">IRON</NavDropdown.Item>
+                                <NavDropdown.Item className='nav-item' as={Link} to="/airPods/3.5">AIR-PODS</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item as={Link} to="/sport/3.6">Sport</NavDropdown.Item>
+                                <NavDropdown.Item className='nav-item' as={Link} to="/others/3.6">OTHERS</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                         <Nav>
-                            <Nav.Link className='nav-style' as={Link} to="/about">About</Nav.Link>
+                            <Nav.Link className='nav-style nav-item' as={Link} to="/about">ABOUT</Nav.Link>
                             {/* {
                                 user ?
                                     <button style={{ backgroundColor: 'black', color: 'white' }} className='btn btn-link text-decoration-none' onClick={handleSignOut}>Sign Out</button>

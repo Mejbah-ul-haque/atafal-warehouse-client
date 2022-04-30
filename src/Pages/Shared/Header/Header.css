@@ -1,0 +1,11 @@
+.nav-item {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.nav-item:hover {
+    color: red !important;
+    background-color: beige;
+}
