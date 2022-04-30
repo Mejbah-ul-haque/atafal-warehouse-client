@@ -6,37 +6,43 @@ import banner3 from '../../../Images/Banner/banner3.jpg'
 
 const Banner = () => {
     return (
-        <Carousel fade>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={banner1}
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={banner2}
-                    alt="Second slide"
-                />
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                    <Carousel fade>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={banner1}
+                                alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={banner2}
+                                alt="Second slide"
+                            />
 
-                <Carousel.Caption>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={banner3}
-                    alt="Third slide"
-                />
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={banner3}
+                                alt="Third slide"
+                            />
 
-                <Carousel.Caption>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+                            <Carousel.Caption>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+            </div>
+        </div>
     );
 };
 
