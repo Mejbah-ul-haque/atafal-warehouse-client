@@ -14,12 +14,14 @@ const Items = () => {
     return (
         <div className='container'>
             <h2>Items:{items.length}</h2>
-            {
-                items.slice(0, 6).map(item => <Item
-                    key={item._id}
-                    item={item}
-                ></Item>)
-            }
+            <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                {
+                    items.slice(0, 6).map(item => <Item
+                        key={item._id}
+                        item={item}
+                    ></Item>)
+                }
+            </div>
         </div>
     );
 };
