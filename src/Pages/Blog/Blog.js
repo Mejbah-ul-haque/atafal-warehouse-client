@@ -1,9 +1,12 @@
 import React from 'react';
+import PageTitle from '../Shared/Footer/PageTitle/PageTitle';
+
 import './Blog.css';
 
 const Blog = () => {
     return (
         <div style={{ minHeight: '100vh' }} className='container'>
+            <PageTitle title='Blog'></PageTitle>
             <h2 className='text-center text-uppercase fs-5 my-5'><span style={{ color: '#003366', borderRadius: '50px', border: '2px solid #003366' }} className='py-2 px-5'>Atafal Blog</span></h2>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <div className="col">

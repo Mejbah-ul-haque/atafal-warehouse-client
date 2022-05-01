@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTitle from '../../Shared/Footer/PageTitle/PageTitle';
 import Banner from '../Banner/Banner';
 import Items from '../Items/Items';
 import LeadSection from '../LeadSection/LeadSection';
@@ -11,6 +12,7 @@ const Home = () => {
             <LeadSection></LeadSection>
             <Items></Items>
             <Special1></Special1>
+            <PageTitle title='Home'></PageTitle>
         </div>
     );
 };
