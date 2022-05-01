@@ -42,9 +42,9 @@ const Header = () => {
                             <Nav.Link className='nav-style nav-item' as={Link} to="/about">ABOUT</Nav.Link>
                             {
                                 user ?
-                                    <button style={{ backgroundColor: 'black', color: 'white' }} className='btn btn-link text-decoration-none' onClick={handleSignOut}>Sign Out</button>
+                                    <button className='border-0 bg-white text-dark fw-bold btn-link nav-item text-decoration-none' onClick={handleSignOut}>Sign Out</button>
                                     :
-                                    <Nav.Link className='nav-style' as={Link} to="/login">
+                                    <Nav.Link className='nav-style nav-item text-dark fw-bold' as={Link} to="/login">
                                         Login
                                     </Nav.Link>}
                         </Nav>

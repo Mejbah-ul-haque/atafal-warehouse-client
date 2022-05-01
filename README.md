@@ -2,29 +2,41 @@
 (the best electronics warehouse)
 
 
-## Project Live Link :
+## 1. Project Live Link :
 
- ## Atafal Warehouse [Live Link]().
+## Atafal Warehouse [Live Link]().
 
-## Github Client Side Link (atafal-warehouse-client) :
+## 2. Github Client Side Link :
 
  ## atafal-warehouse-client [Github Client Link]().
 
-## Github Server Side Link :
+## 3. Github Server Side Link :
 
  ## Atafal Warehouse [Github Server Link]().
+
+## 4. Stackoveflow Link :
+
+ ## Stackoverflow [ Link]().
 
 
 ## I have done the following bellow...
 
-- A wonderful home page with responsive navbar, banner carousel, 6 items inventory section, realistic footer and  5 extra section. 
-- Add favicon and dynamic page title.
-- Total fours Firebase authentication implemented. Such as Email-password, Google Sign In, Github Sign In, Facebook.
-- Password verification, password reset option.
-- Full responsive with navigation. Used Route, Private route, Dynamic route.
-- Use toast, Require Auth.
-- use environment variable for password secret.
-- Use gitignore file.
-- 404, Not found page with a fenny picture.
-- added category blog with all four Q/A.
-- Framework/Library used : React, Bootstrap, React-Bootstrap, React hooks.
+1.  A wonderful home page with responsive navbar, banner carousel, 6 items inventory section, realistic footer and  5 extra section. 
+2.  Add favicon and dynamic page title.
+3.  Total fours Firebase authentication implemented. Such as Email-password, Google Sign In, Github Sign In, Facebook.
+4. Password verification, 
+5. password reset option.
+6. Full responsive with navigation. Used Route, Private route, Dynamic route.
+7. use environment variable for password secret.
+8. Use gitignore file.
+9. 404, Not found page with a fenny picture.
+10. added category blog with all four Q/A.
+11. Create stackoverflow profile.
+12. Use JWT tocken (401 and 403).
+13. use pasination.
+14. Use toast, Require Auth.
+15. Show error message.
+16. Use icon and fonts
+17. use axios
+18. Use Animation.
+20. Framework/Library/App used : Reactjs, Nodejs, Expressjs, Plain CSS, Bootstrap, React-Bootstrap, React hooks, Mongodb, Heroku, Firebase, imagebb.
