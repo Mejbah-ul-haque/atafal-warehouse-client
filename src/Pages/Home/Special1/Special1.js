@@ -9,7 +9,7 @@ import item20 from '../../../Images/Items/item20.jpg';
 const Special1 = () => {
     return (
         <div className='container mt-5'>
-            <p style={{ backgroundColor: '#e2e2e2' }} className=''><button style={{ border: '2px solid #003366', backgroundColor: '#003366', color: 'white', borderRadius: '10px' }} className='btn fw-bold d-block mx-auto mt-4 mb-3 border border-5 border-white'>Special-1 Section</button></p>
+            <p style={{ backgroundColor: '#e2e2e2', marginTop: '70px' }} className='w-50 d-block mx-auto'><button style={{ border: '2px solid #003366', backgroundColor: '#003366', color: 'white', borderRadius: '10px' }} className='btn fw-bold d-block mx-auto mt-4 mb-3 px-5 border border-5 border-white text-uppercase'>Special-1 Section</button></p>
 
             <div className="row g-2">
                 <div className="col-12 col-md-6">

@@ -1,0 +1,16 @@
+.others-btn-para {
+    background-color: rgb(236, 235, 235);
+}
+
+.others-btn-para:hover {
+    background-color: black;
+}
+
+.others-btn {
+    color: goldenrod;
+}
+
+.others-btn:hover {
+    color: white;
+    background-color: black;
+}
