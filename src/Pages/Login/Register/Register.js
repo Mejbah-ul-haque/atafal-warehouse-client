@@ -35,7 +35,6 @@ const Register = () => {
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        console.log('Updated profile');
         navigate('/inventory/:id');
 
     }
@@ -52,7 +51,7 @@ const Register = () => {
                             <input type="email" name='email' id='' placeholder=' Email Address' required />
                             <input type="password" name='password' id='' placeholder='Inter Password' required />
                             <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                            <label className={agree ? '' : 'text-danger'} htmlFor="terms"><span className='ms-2'>Accept Mejbah & Mind's terms and conditions</span></label>
+                            <label className={agree ? '' : 'text-danger'} htmlFor="terms"><span className='ms-2'>Accept Atafal Warehouse's terms and conditions</span></label>
                             <input disabled={!agree} className='rounded-pill border border-dark w-50 register-button fw-bold mt-4' type="submit" value="Register Now" />
                         </form>
                         <p className='text-center'>Already have an account? <Link to='/login' className='text-primary pe-auto text-decoration-none fw-bold' onClick={navigateLogin}>Please Login</Link></p>

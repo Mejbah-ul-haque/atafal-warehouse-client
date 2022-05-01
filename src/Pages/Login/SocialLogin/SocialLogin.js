@@ -16,16 +16,16 @@ const SocialLogin = () => {
 
     let errorElement;
 
-    if (loading || loading1 || loading2) {
+    if (loading || loading1) {
         return <Loading></Loading>
     }
 
-    if (error || error1 || error2) {
+    if (error || error1) {
         errorElement = <p className='text-danger'>Error: {error?.message}{error1?.message}</p>
 
     }
 
-    if (user || user1 || user2) {
+    if (user || user1) {
         navigate('/inventory/:id');
     }
     return (
