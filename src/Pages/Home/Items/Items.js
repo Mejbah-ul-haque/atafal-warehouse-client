@@ -7,7 +7,7 @@ const Items = () => {
     const navigate = useNavigate();
     const [items] = useItems([]);
 
-    const navigateToManageInventories = () => {
+    const navigateToManageInventories = (id) => {
         navigate('/inventories')
     }
 
