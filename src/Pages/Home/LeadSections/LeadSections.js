@@ -10,7 +10,7 @@ const LeadSections = () => {
             <div className="row row-cols-1 row-cols-lg-2 g-4">
                 {
                     items.slice(6, 8).map(leadSection => <LeadSection
-                        key={leadSection.id}
+                        key={leadSection._id}
                         leadSection={leadSection}
                     ></LeadSection>)
                 }

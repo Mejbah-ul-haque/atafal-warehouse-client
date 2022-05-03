@@ -11,7 +11,7 @@ const Items2 = () => {
 
                 {
                     items.slice(8, 14).map(item2 => <Item2
-                        key={item2.id}
+                        key={item2._id}
                         item2={item2}
                     ></Item2>)
                 }

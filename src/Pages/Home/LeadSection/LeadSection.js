@@ -7,7 +7,7 @@ import useItems from '../../Hooks/useItems';
 const LeadSection = ({ leadSection }) => {
 
 
-    const { id, name, img, description, price, supplierName, quantity } = leadSection;
+    const { _id, name, img, description, price, supplierName, quantity } = leadSection;
     const navigate = useNavigate();
     const navigateToInventory = id => {
         navigate(`/inventory/${id}`);
@@ -30,7 +30,7 @@ const LeadSection = ({ leadSection }) => {
                                 <p className='py-0'><small> Q.tity </small><button className='border border-muted bg-white w-100 fs-6 fw-bold'>{quantity}</button></p>
                             </div>
                             <p className='my-0'><small>supplier: {supplierName}</small></p>
-                            <p className='text-center mt-2 pb-0 others-btn-para'><button onClick={() => navigateToInventory(id)} className=' border-0 px-4 py-1 others-btn'>Manage</button></p>
+                            <p className='text-center mt-2 pb-0 others-btn-para'><button onClick={() => navigateToInventory(_id)} className=' border-0 px-4 py-1 others-btn'>Manage</button></p>
                         </div>
                     </div>
                 </div>
