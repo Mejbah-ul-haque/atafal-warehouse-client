@@ -22,8 +22,8 @@ const LeadSection = ({ leadSection }) => {
                     </div>
                     <div className="col-md-6 px-4">
                         <div className="text-center">
-                            <h5 className="card-title text-secondary fs-6 fw-bold text-uppercase my-3">{name}</h5>
-                            <p>{description}</p>
+                            <h5 className="card-title text-secondary fs-6 fw-bold text-uppercase my-3">{name.slice(0, 18)}</h5>
+                            <p>{description.slice(0, 60)}</p>
 
                             <div className="d-flex justify-content-between">
                                 <p className='py-0 me-2'><small> Price </small><button className='border border-muted bg-white w-100 fs-6 fw-bold text-danger'>{price}</button></p>
