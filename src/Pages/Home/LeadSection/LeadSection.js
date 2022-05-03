@@ -26,7 +26,7 @@ const LeadSection = ({ leadSection }) => {
                             <p>{description.slice(0, 60)}</p>
 
                             <div className="d-flex justify-content-between">
-                                <p className='py-0 me-2'><small> Price </small><button className='border border-muted bg-white w-100 fs-6 fw-bold text-danger'>{price}</button></p>
+                                <p className='py-0 me-2'><small> Price </small><button className='border border-muted bg-white w-100 fs-6 fw-bold text-danger'>${price}</button></p>
                                 <p className='py-0'><small> Q.tity </small><button className='border border-muted bg-white w-100 fs-6 fw-bold'>{quantity}</button></p>
                             </div>
                             <p className='my-0'><small>supplier: {supplierName}</small></p>

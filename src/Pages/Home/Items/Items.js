@@ -22,7 +22,7 @@ const Items = () => {
                     ></Item>)
                 }
             </div>
-            <p style={{ backgroundColor: '#e2e2e2', marginTop: '70px' }} className='w-50 f-block mx-auto'><button onClick={navigateToManageInventories} style={{ border: '2px solid #003366', backgroundColor: '#003366', color: 'white', borderRadius: '10px' }} className='btn d-block mx-auto mt-5 mb-4 px-3 py-2 border border-5 border-white fw-bold text-uppercase'>Manage Inventories</button></p>
+            <p style={{ backgroundColor: '#e2e2e2', marginTop: '70px' }} className='w-50 f-block mx-auto'><button onClick={navigateToManageInventories} style={{ border: '2px solid #003366', backgroundColor: '#003366', color: 'white', borderRadius: '50px' }} className='btn d-block mx-auto mt-5 mb-4 px-3 py-2 border border-5 border-white fw-bold text-uppercase'>Manage Inventories</button></p>
         </div>
     );
 };

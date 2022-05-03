@@ -20,7 +20,7 @@ const Item2 = ({ item2 }) => {
                             <h5 className="card-title text-secondary fs-6 fw-bold text-uppercase my-3">{name.slice(0, 15)}</h5>
 
                             <div className="d-flex justify-content-between">
-                                <p className='py-0 me-2'><small> Price </small><button className='border border-muted bg-white w-100 fs-6 fw-bold text-danger'>{price}</button></p>
+                                <p className='py-0 me-2'><small> Price </small><button className='border border-muted bg-white w-100 fs-6 fw-bold text-danger'>${price}</button></p>
                                 <p className='py-0'><small> Q.tity </small><button className='border border-muted bg-white w-100 fs-6 fw-bold'>{quantity}</button></p>
                             </div>
                             <p className='text-center mt-2 pb-0 others-btn-para'><button onClick={() => navigateToInventory(_id)} className=' border-0 px-4 py-1 others-btn'>Manage</button></p>
