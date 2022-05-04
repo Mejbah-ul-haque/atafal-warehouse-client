@@ -8,7 +8,9 @@ const Inventory = () => {
     const { name, img, description, quantity, price, supplierName } = item;
     const navigate = useNavigate();
 
-    const { register, handleSubmit } = useForm();
+    const { register } = useForm();
+
+
 
     useEffect(() => {
         const url = `http://localhost:5000/item/${id}`;
@@ -18,29 +20,39 @@ const Inventory = () => {
             .then(data => setItem(data));
     }, []);
 
+    // const handleRestock = event => {
+    //     event.preventDefault();
+    //     const quantity = event.target.quantity.value;
+    //     const updateQuantity = { quantity };
+
+    //     const url = `http://localhost:5000/item/${id}`;
+    //     fetch(url, {
+    //         method: 'PUT',
+    //         headers: {
+    //             'content-type': 'application/json'
+    //         },
+    //         body: JSON.stringify(updateQuantity)
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => {
+    //             console.log('successful', data);
+    //             alert('hahahahhahaha')
+    //             event.target.reset();
+    //         })
+
+    // }
+
     const navigateToManageInventory = () => {
         navigate('/inventories');
     }
 
 
-    const onSubmit = data => {
-        // const url = `http://localhost:5000/item`;
-        // fetch(url, {
-        //     method: 'POST',
-        //     headers: {
-        //         'content-type': 'application/json'
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        //     .then(res => res.json())
-        //     .then(result => {
-        //         console.log(result);
-        //     })
-    };
-
     const handleToDelivered = () => {
 
     }
+
+
+
 
     return (
         <>
@@ -73,11 +85,15 @@ const Inventory = () => {
                                 <div className="col ">
                                     <div className='d-flex justify-content-around  bg-light py-3'>
                                         <p className='mb-0'>Quantity:<span className='fs-4 fw-bold border px-2 py-1'>{quantity}</span></p>
-                                        <form className='d-flex align-items-center' onSubmit={handleSubmit(onSubmit)}>
-                                            <input className='bg-dark btn text-light ms-4' type="submit" value='Restock' />
-                                            <input className='text-center w-25 py-1' type="number" {...register("quantity")} />
+                                        {/* <form className='d-flex align-items-center' onSubmit={handleAddQuantity}>
+                                            <input className='bg-white btn text-dark px-0' type="button" value='Quantity:' />
+                                            <input className='text-center w-50 p-0 fs-4 fw-bold' value={quantity} {...register("quantity")} />
+                                        </form> */}
+                                        <form className='d-flex align-items-center'>
+                                            <input className='bg-dark btn text-light' type="submit" value='Restock' />
+                                            <input className='text-center w-50 py-1' type="number" {...register("quantity")} />
                                         </form>
-                                        <button onClick={handleToDelivered} className='bg-dark btn text-white ms-sm-4 '>Delivered</button>
+                                        <button onClick={handleToDelivered} className='bg-dark btn text-white '>Delivered</button>
                                     </div>
 
                                 </div>
