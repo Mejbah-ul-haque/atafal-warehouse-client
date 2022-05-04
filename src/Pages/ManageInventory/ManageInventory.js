@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ManageInventory = ({ manageInventory }) => {
+const ManageInventory = ({ manageInventory, handleDelete }) => {
     const { id, name, img, description, price, supplierName, quantity } = manageInventory;
 
     return (
@@ -14,7 +14,7 @@ const ManageInventory = ({ manageInventory }) => {
                         <p className='text-muted text-capitalize px-1'><small>{description.slice(0, 100)}</small></p>
                         <p className='text-center text-muted py-0 lh-1'><small> Supplier: <span className='text-dark'>{supplierName}</span></small></p>
                         <p className='py-0'>Quantity : <button className='border border-secondary bg-light fs-6 fw-bold'>{quantity}</button></p>
-                        <p className='text-center mt-2 pb-0'><button style={{ backgroundColor: '', color: 'goldenrod' }} className='btn btn-danger text-white px-5 py-1'>Delete</button></p>
+                        <p className='text-center mt-2 pb-0'><button onClick={() => handleDelete(manageInventory._id)} style={{ backgroundColor: '', color: 'goldenrod' }} className='btn btn-danger text-white px-5 py-1'>Delete</button></p>
                     </div>
                 </div>
             </div>

@@ -1,10 +1,13 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { useNavigate } from 'react-router-dom';
+import './AddNewItem.css';
 
 const AddNewItem = () => {
     const { register, handleSubmit } = useForm();
+    const navigate = useNavigate();
+
     const onSubmit = data => {
-        console.log(data)
         const url = `http://localhost:5000/item`;
         fetch(url, {
             method: 'POST',
@@ -18,18 +21,43 @@ const AddNewItem = () => {
                 console.log(result);
             })
     };
+
+    const navigateToManageInventory = () => {
+        navigate('/inventories');
+
+    }
     return (
-        <div className='w-50 mx-auto'>
-            <h3>Please add a new item</h3>
-            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
-                <textarea className='mb-2' placeholder='Description' {...register("description")} />
-                <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
-                <input className='mb-2' placeholder='Supplier' type="text" {...register("supplierName")} />
-                <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
-                <input className='mb-2' placeholder='Image URL' type="text" {...register("img")} />
-                <input type="submit" value='Add Item' />
-            </form>
+        <div >
+
+
+
+            <div className='py-5 bg-light text-center'>
+                <h3 className='fs-5 fw-bold text-uppercase'>add a new item</h3>
+                <div style={{ height: '1px' }} className='bg-dark w-50 d-block mx-auto'></div>
+
+            </div>
+            <div className='container'>
+                <div className="row">
+                    <div className="col">
+
+                        <div className='mx-auto mt-5 item-add-input-field'>
+
+                            <h3 className='fs-5 text-center'>Please add a new item</h3>
+                            <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
+                                <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+                                <textarea className='mb-2' placeholder='Description' {...register("description")} />
+                                <input className='mb-2' placeholder='Price' type="number" {...register("price")} />
+                                <input className='mb-2' placeholder='Supplier' type="text" {...register("supplierName")} />
+                                <input className='mb-2' placeholder='Quantity' type="number" {...register("quantity")} />
+                                <input className='mb-2' placeholder='Image URL' type="text" {...register("img")} />
+                                <input className='bg-dark btn text-light' type="submit" value='Add Item' />
+                            </form>
+                            <button onClick={navigateToManageInventory} style={{ marginTop: '100px', border: '2px solid #003366', borderRadius: '50px', backgroundColor: '#003366' }} className='text-center fw-bold py-2 px-3 text-white btn d-block mx-auto'>Back to Manage Inventory page</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
