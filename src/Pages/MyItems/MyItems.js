@@ -5,7 +5,7 @@ const MyItems = () => {
     const [items, setItems] = useItems([]);
 
     const handleDelete = id => {
-        const proceed = window.confirm('Are you sure?');
+        const proceed = window.confirm('Are you sure want to delete this item?');
         if (proceed) {
             const url = `http://localhost:5000/item/${id}`;
             fetch(url, {
