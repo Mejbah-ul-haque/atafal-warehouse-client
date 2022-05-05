@@ -1,24 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from 'react-router-dom';
+import useItemDetails from '../Hooks/useItemDetails';
 
 const Inventory = () => {
     const { id } = useParams();
-    const [item, setItem] = useState({});
-    const { name, img, description, quantity, price, supplierName } = item;
     const navigate = useNavigate();
 
     const { register } = useForm();
 
-
-
-    useEffect(() => {
-        const url = `http://localhost:5000/item/${id}`;
-
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setItem(data));
-    }, []);
+    const [item] = useItemDetails(id);
+    const { name, img, description, quantity, price, supplierName } = item;
 
     // const handleRestock = event => {
     //     event.preventDefault();
