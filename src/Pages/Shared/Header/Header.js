@@ -16,7 +16,7 @@ const Header = () => {
 
     return (
         <>
-            <Navbar className='py-0' collapseOnSelect expand="lg" bg="white" sticky='top' variant="light">
+            <Navbar className='shadow-lg py-0' collapseOnSelect expand="lg" bg="white" sticky='top' variant="light">
                 <Container className='px-3  bg-body'>
                     <Navbar.Brand style={{ fontSize: "2rem", color: 'black' }} as={Link} to="/">
                         <img src={logo} height='60' alt="" />
@@ -60,6 +60,9 @@ const Header = () => {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <div className='bg-light py-1'>
+                <h6 className='container ps-5 text-danger'>the best electronics warehouse</h6>
+            </div>
         </>
 
     );

@@ -76,7 +76,7 @@ const Inventory = () => {
                                         <h5 className="card-title text-secondary text-start fs-4 fw-bold text-capitalize my-3">{name}</h5>
                                         <p className='text-start'>{description}</p>
 
-                                        <p className='py-0 me-2 text-start'>Price:  <button className=' btn bg-white fs-4 fw-bold text-danger'>${price}</button></p>
+                                        <p className='py-0 me-2 text-start'><button style={{ color: 'darkblue' }} className=' btn bg-white fs-4 fw-bold'>${price}.00</button></p>
                                         <p className='text-start'>Supplier Name : {supplierName}</p>
                                     </div>
                                 </div>
