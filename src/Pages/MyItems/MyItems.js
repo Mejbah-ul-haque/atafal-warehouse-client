@@ -30,13 +30,16 @@ const MyItems = () => {
             </div>
             <div className='w-50 mx-auto'>
                 {
-                    items.map(item => <div className='border mb-2 p-2 bg-light'
+                    items.map(item => <div className='border mb-3 p-2 bg-light'
                         key={item._id}>
                         <div className='d-flex justify-content-between align-items-center'>
                             <small><img style={{ height: '50px' }} className='img-fluid' src={item.img} alt="" /></small>
-                            <h5 className='fs-6 fw-bold text-uppercase'>{item.name.slice(0, 25)}</h5>
+                            <div>
+                                <h5 className='fs-5 text-center fw-bold text-uppercase'>{item.name}</h5>
+                                <p className='text-center'>Supplier : {item.supplierName} || Price : <span className='text-danger fw-bold'>${item.price}</span></p>
+                            </div>
 
-                            <button className='border bg-danger' onClick={() => handleDelete(item._id)}><FontAwesomeIcon className='text-light p-2' icon={faTrash}></FontAwesomeIcon></button>
+                            <button className='border bg-danger' onClick={() => handleDelete(item._id)}><FontAwesomeIcon className='text-light fs-3 p-1' icon={faTrash}></FontAwesomeIcon></button>
                         </div>
 
                     </div>)
