@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faClock, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import bankCard from '../../../Images/BankCard/bankCard.jpg';
 import './Footer.css';
 
@@ -12,14 +14,25 @@ const Footer = () => {
             <div style={{ height: '50px', backgroundColor: 'lightgray' }}></div>
             <div style={{ backgroundColor: '#003366' }}>
                 <section className='container'>
-                    <div className="row g-0">
+                    <div className="row g-0 ">
                         <div className="col-sm-12 col-md-4">
-                            <div style={{ height: '300px' }} className="text-light text-start border border-secondary border-top-0 p-4 pt-5">
+                            <div style={{ height: '300px' }} className="text-light text-start border border-secondary border-top-0 p-4 pt-5 lh-1">
                                 <h3>contact us</h3>
-                                <p><small>+8801919999999</small> </p>
-                                <p><small> atafal@gmail.com</small> </p>
-                                <p><small>PO BOX 7091, Kathal Bagan, Dhaka</small> </p>
-                                <p><small>Opening Hours : 8.00AM-22PM</small></p>
+                                <p> <FontAwesomeIcon className='text-muted' icon={faPhone}></FontAwesomeIcon>
+                                    <small className='ms-2'>+8801919999999</small>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon className='text-muted' icon={faEnvelope}></FontAwesomeIcon>
+                                    <small className='ms-2'> atafal@gmail.com</small>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon className='text-muted' icon={faLocationDot} />
+                                    <small className='ms-2'>PO BOX 7091, Dhaka</small>
+                                </p>
+                                <p>
+                                    <FontAwesomeIcon className='text-muted' icon={faClock}></FontAwesomeIcon>
+                                    <small className='ms-2'>Opening : 8.00AM-22PM</small>
+                                </p>
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-4">

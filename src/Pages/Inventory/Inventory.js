@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { Link, useParams } from 'react-router-dom';
 import useItemDetails from '../Hooks/useItemDetails';
@@ -7,19 +7,26 @@ import useItemDetails from '../Hooks/useItemDetails';
 const Inventory = () => {
     const { id } = useParams();
 
-    const { register } = useForm();
+    const { register, handleSubmit } = useForm();
 
-    const [item] = useItemDetails(id);
+    const [item, setItem] = useItemDetails(id)
+        ;
+    console.log(setItem);
     const { name, img, description, quantity, price, supplierName } = item;
 
 
+    const handleToDelivered = (quantity) => {
+        const newQuantity = quantity - 1;
+        console.log(newQuantity);
 
-    const [update, setUpdate] = useState([]);
 
+    }
 
+    const onSubmit = event => {
+        // event.preventDefault();
 
-    const handleToDelivered = event => {
-        const click = event.target.value;
+        // const updateQuantity = quantity + quantity;
+
     }
 
     return (
@@ -56,17 +63,12 @@ const Inventory = () => {
                                 <div className="col ">
                                     <div className='d-flex justify-content-around  bg-light py-3'>
                                         <p className='mb-0'>Quantity:<span className='fs-4 fw-bold border px-2 py-1'>{quantity}</span></p>
-                                        {/* <form className='d-flex align-items-center' onSubmit={handleAddQuantity}>
-                                            <input className='bg-white btn text-dark px-0' type="button" value='Quantity:' />
-                                            <input className='text-center w-50 p-0 fs-4 fw-bold' value={quantity} {...register("quantity")} />
-                                        </form>  */}
-                                        <form className='d-flex align-items-center'>
+                                        <form className='d-flex align-items-center' onSubmit={handleSubmit(onSubmit)}>
                                             <input className='bg-dark btn text-light' type="submit" value='Restock' />
-                                            <input
-                                                className='text-center w-50 py-1' type="number" {...register("quantity")} />
+                                            <input className='text-center w-50 py-1' type="number" {...register("quantity")} />
                                         </form>
 
-                                        <button onClick={handleToDelivered} className='bg-dark btn text-white '>Delivered</button>
+                                        <button onClick={() => handleToDelivered(quantity)} className='bg-dark btn text-white '>Delivered</button>
 
                                     </div>
 

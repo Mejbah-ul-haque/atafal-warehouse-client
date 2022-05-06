@@ -1,5 +1,7 @@
 import React from 'react';
 import useItems from '../Hooks/useItems';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const MyItems = () => {
     const [items, setItems] = useItems([]);
@@ -20,18 +22,28 @@ const MyItems = () => {
         }
     }
     return (
-        <div className='w-50 mx-auto'>
-            <h2>This is My Items</h2>
-            {
-                items.map(item => <div
-                    key={item._id}>
-                    <h4>{item.name}
-                        <button onClick={() => handleDelete(item._id)}>X</button>
-                    </h4>
+        <>
+            <div className='py-4 mb-5 bg-light text-center'>
+                <h3 className='fs-4 fw-bold'>My Items</h3>
+                <div style={{ height: '1px' }} className='bg-dark w-50 d-block mx-auto'></div>
+                <p className='text-muted'>product informations</p>
+            </div>
+            <div className='w-50 mx-auto'>
+                {
+                    items.map(item => <div className='border mb-2 p-2 bg-light'
+                        key={item._id}>
+                        <div className='d-flex justify-content-between align-items-center'>
+                            <small><img style={{ height: '50px' }} className='img-fluid' src={item.img} alt="" /></small>
+                            <h5 className='fs-6 fw-bold text-uppercase'>{item.name.slice(0, 25)}</h5>
 
-                </div>)
-            }
-        </div>
+                            <button className='border bg-danger' onClick={() => handleDelete(item._id)}><FontAwesomeIcon className='text-light p-2' icon={faTrash}></FontAwesomeIcon></button>
+                        </div>
+
+                    </div>)
+                }
+            </div>
+        </>
+
     );
 };
 

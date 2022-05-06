@@ -27,8 +27,8 @@ const Header = () => {
                             <Nav.Link className='nav-style nav-item' as={Link} to="/">Home</Nav.Link>
                             {
                                 user && <>
-                                    <Nav.Link className='nav-style nav-item' as={Link} to="manage">ManageItems</Nav.Link>
-                                    <Nav.Link className='nav-style nav-item' as={Link} to="manage">AddItem</Nav.Link>
+                                    <Nav.Link className='nav-style nav-item' as={Link} to="/inventories">ManageItems</Nav.Link>
+                                    <Nav.Link className='nav-style nav-item' as={Link} to="/addnewitem">AddItem</Nav.Link>
                                     <Nav.Link className='nav-style nav-item' as={Link} to="myitems">MyItems</Nav.Link>
 
                                 </>
@@ -61,7 +61,7 @@ const Header = () => {
                 </Container>
             </Navbar>
             <div className='bg-light py-1'>
-                <h6 className='container ps-5 text-danger'>the best electronics warehouse</h6>
+                <h6 className='container ps-5 fs-4 text-center text-primary'>the best electronics warehouse</h6>
             </div>
         </>
 

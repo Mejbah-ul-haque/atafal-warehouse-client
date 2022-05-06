@@ -84,7 +84,7 @@ import { useNavigate } from 'react-router-dom';
 import './AddNewItem.css';
 
 const AddNewItem = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, reset, handleSubmit } = useForm();
     const navigate = useNavigate();
 
     const onSubmit = data => {
@@ -98,7 +98,9 @@ const AddNewItem = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result);
+                if (result) {
+                    reset();
+                }
             })
     };
 

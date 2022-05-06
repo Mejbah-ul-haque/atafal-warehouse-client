@@ -1,9 +1,21 @@
+/* .blog-card {
+    position: relative;
+}
+
+.btn-read-more {
+    position: absolute;
+    bottom: -30px;
+    margin-left: 50px;
+
+} */
+
 .blog-q {
     color: white;
     background-color: #003366;
     font-size: 16px;
     padding: 20px;
-    height: 130px;
+    height: 120px;
+
 }
 
 .blog-btn {
