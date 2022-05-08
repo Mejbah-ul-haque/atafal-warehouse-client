@@ -6,7 +6,7 @@ const Items2 = () => {
     const [items] = useItems([]);
     return (
         <>
-            <p style={{ backgroundColor: '#e2e2e2', marginTop: '70px' }} className='w-100 d-block mx-auto'><span style={{ color: 'white', borderRadius: '10px' }} className='btn fw-bold d-block mx-auto my-4 px-5 text-dark text-uppercase'> Extra Section two</span></p>
+            <p style={{ backgroundColor: '#e2e2e2', marginTop: '70px' }} className='w-50 d-block mx-auto'><span style={{ color: 'white', borderRadius: '10px' }} className='btn fw-bold d-block mx-auto my-4 px-5 text-dark text-uppercase'> Extra Section two</span></p>
 
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 

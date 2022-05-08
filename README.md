@@ -2,21 +2,20 @@
 (the best electronics warehouse)
 
 
-## 1. Project Live Link :
+## 1. Project Live Link : https://atafal-warehouse.web.app/
 
-## Atafal Warehouse [Live Link]().
+## Atafal Warehouse [Live Link](https://atafal-warehouse.web.app/).
 
-## 2. Github Client Side Link :
+## 2. Github Client Side Link : https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Mejbah-ul-haque
 
- ## atafal-warehouse-client [Github Client Link]().
+ ## atafal-warehouse-client [Github Client Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Mejbah-ul-haque).
 
-## 3. Github Server Side Link :
+## 3. Github Server Side Link : https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Mejbah-ul-haque
 
- ## Atafal Warehouse [Github Server Link]().
+ ## Atafal Warehouse [Github Server Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Mejbah-ul-haque).
 
-## 4. Stackoveflow Link : https://meta.stackexchange.com/questions/378493/how-to-reduce-the-quantity-by-pressing-a-button-and-increase-it-through-input-fi
-
- ## Stackoverflow [ Link](https://meta.stackexchange.com/questions/378493/how-to-reduce-the-quantity-by-pressing-a-button-and-increase-it-through-input-fi).
+## 4. Stackoveflow Link : https://stackoverflow.com/questions/72159870/i-have-been-stuck-for-three-days-where-is-the-problem-why-code-not-going-to-mo
+ ## Stackoverflow [ Link](https://stackoverflow.com/questions/72159870/i-have-been-stuck-for-three-days-where-is-the-problem-why-code-not-going-to-mo).
 
 
 ## I have done the following bellow...

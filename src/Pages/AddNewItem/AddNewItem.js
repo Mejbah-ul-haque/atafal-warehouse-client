@@ -24,7 +24,7 @@ const AddNewItem = () => {
 
 
         }
-        axios.post('http://localhost:5000/myitems', myItems)
+        axios.post('https://salty-ocean-65045.herokuapp.com/myitems', myItems)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {
@@ -88,7 +88,7 @@ const AddNewItem = () => {
     const navigate = useNavigate();
 
     const onSubmit = data => {
-        const url = `http://localhost:5000/item`;
+        const url = `https://salty-ocean-65045.herokuapp.com/item`;
         fetch(url, {
             method: 'POST',
             headers: {

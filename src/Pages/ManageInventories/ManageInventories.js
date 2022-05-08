@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import useItems from '../Hooks/useItems';
 import ManageInventory from '../ManageInventory/ManageInventory';
 
-
 const ManageInventories = () => {
     const [items, setItems] = useItems([]);
     const handleDelete = id => {
@@ -11,15 +10,16 @@ const ManageInventories = () => {
         const proceed = window.confirm('Are you sure want to delete this item from manage inventory?');
 
         if (proceed) {
-            const url = `http://localhost:5000/item/${id}`;
+            const url = `https://salty-ocean-65045.herokuapp.com/item/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
-                    const remaining = items.filter(item => item._id !== id);
-                    setItems(remaining);
+                    if (data.deletedCount > 0) {
+                        const remaining = items.filter(item => item._id !== id);
+                        setItems(remaining);
+                    }
                 })
         }
     }

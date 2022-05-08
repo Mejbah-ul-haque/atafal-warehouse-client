@@ -9,7 +9,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure want to delete this item?');
         if (proceed) {
-            const url = `http://localhost:5000/item/${id}`;
+            const url = `https://salty-ocean-65045.herokuapp.com/item/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
