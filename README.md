@@ -10,9 +10,9 @@
 
  ## atafal-warehouse-client [Github Client Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Mejbah-ul-haque).
 
-## 3. Github Server Side Link : https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Mejbah-ul-haque
+## 3. Github Server Side Link : https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Mejbah-ul-haque
 
- ## Atafal Warehouse [Github Server Link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-Mejbah-ul-haque).
+ ## Atafal Warehouse [Github Server Link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-Mejbah-ul-haque).
 
 ## 4. Stackoveflow Link : https://stackoverflow.com/questions/72159870/i-have-been-stuck-for-three-days-where-is-the-problem-why-code-not-going-to-mo
  ## Stackoverflow [ Link](https://stackoverflow.com/questions/72159870/i-have-been-stuck-for-three-days-where-is-the-problem-why-code-not-going-to-mo).
@@ -31,11 +31,7 @@
 9. 404, Not found page with a fenny picture.
 10. added category blog with all four Q/A.
 11. Create stack overflow profile.
-12. Use JWT token (401 and 403).
-13. use pagination.
 14. Use toast, Require Auth.
 15. Show error message.
 16. Use icon and fonts
-17. use axios
-18. Use Animation.
 20. Framework/Library/App used : React.js, Nodejs, Express.js, Plain CSS, Bootstrap, React-Bootstrap, React hooks, Mongodb, Heroku, Firebase, imagebb.
