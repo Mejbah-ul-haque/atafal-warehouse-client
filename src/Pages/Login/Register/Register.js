@@ -18,7 +18,7 @@ const Register = () => {
     const [updateProfile, updating, UpdateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
-
+//  have to change
     const navigateLogin = () => {
         navigate('/login');
     }
